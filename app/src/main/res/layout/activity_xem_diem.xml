@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_xem_diem"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/xemdiem"
+
+    tools:context="com.el_rangxanh.test_11.slide.XemDiemActivity"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/tvKetQuaThi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1de9b6"
+        android:gravity="center"
+        android:text="KẾT QUẢ THI"
+        android:textAlignment="center"
+        android:textColor="#e91e63"
+        android:textSize="20sp"
+        android:textStyle="normal|bold|italic"
+        android:layout_weight="0.08"/>
+
+    <LinearLayout
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="18dp"
+        android:layout_weight="0.03">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="307dp"
+        android:layout_height="32dp"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:layout_weight="0.13">
+
+        <TextView
+            android:id="@+id/tvCaudung"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.04"
+            android:text="Số câu đúng :"
+            android:textColor="#f4511e"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/tvsoCaudung"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.99"
+            android:text="6"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="329dp"
+        android:layout_height="32dp"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:layout_weight="0.13">
+
+        <TextView
+            android:id="@+id/tvCausai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.03"
+            android:text="Số câu sai :"
+            android:textColor="#f4511e"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/tvsoCausai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="4"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="298dp"
+        android:layout_height="32dp"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:layout_weight="0.12">
+
+        <TextView
+            android:id="@+id/tvChualam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.77"
+            android:text="Số câu chưa làm :"
+            android:textColor="#f4511e"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/tvsocauChualam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0"
+            android:textSize="18sp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="317dp"
+        android:layout_height="32dp"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:layout_weight="0.04">
+
+        <TextView
+            android:id="@+id/tvTongdiem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.14"
+            android:text="Tổng Điểm :"
+            android:textColor="#f4511e"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/tvsoTongdiem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="6"
+            android:textSize="18sp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="26dp"
+        android:layout_weight="0.08">
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        >
+        <Button
+            android:text="Thoát"
+            android:layout_width="wrap_content"
+            android:layout_height="57dp"
+            android:id="@+id/btnThoat"
+            android:layout_weight="1"/>
+
+        <Button
+            android:text="Xem lại"
+            android:layout_width="wrap_content"
+            android:layout_height="57dp"
+            android:id="@+id/btnXemlai"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+</LinearLayout>

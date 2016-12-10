@@ -1,0 +1,128 @@
+<?xml version="1.0"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#78b9deba"
+              android:orientation="vertical"
+    >
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="485dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/tvsttcau"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:text="Câu 1"
+                    android:textAlignment="center"
+                    android:textColor="#304ffe"
+                    android:textSize="22sp"
+                    android:textStyle="bold|italic"
+                    android:layout_weight="0.07"/>
+
+                <ImageView
+                    android:id="@+id/star"
+                    android:layout_width="33dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="#78b9deba"
+                    android:src="@drawable/unchecked"
+                    />
+
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tvcauhoi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Câu hỏi thứ nhất "
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="italic"
+                android:textAlignment="textStart"/>
+
+            <ImageView
+                android:id="@+id/ivIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="0dp"
+                android:padding="0dp"
+                android:visibility="visible"/>
+
+            <RadioGroup
+                android:id="@+id/radGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                tools:ignore="RtlSymmetry">
+
+
+                <RadioButton
+                    android:id="@+id/radA"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:checked="false"
+                    android:text="Trả lời 1"
+                    android:textColor="#311b92"
+
+                    android:textSize="16sp"
+                    android:textStyle="bold"/>
+
+                <RadioButton
+                    android:id="@+id/radB"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:text="Trả lời 2"
+                    android:textColor="#311b92"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:checked="false"/>
+
+                <RadioButton
+                    android:id="@+id/radC"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:checked="false"
+                    android:text="Trả lời 3"
+                    android:textColor="#311b92"
+                    android:textSize="16sp"
+                    android:textStyle="bold"/>
+
+                <RadioButton
+                    android:id="@+id/radD"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="61dp"
+                    android:checked="false"
+                    android:text="Trả lời 4"
+                    android:textColor="#311b92"
+                    android:textSize="16sp"
+                    android:textStyle="bold"/>
+
+            </RadioGroup>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

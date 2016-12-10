@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+
+    <TextView
+        android:text="Hãy chắc chắn rằng bạn đã hoàn thành xong bài thi."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:fontFamily="casual"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:textStyle="normal|italic"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:text="Thoát"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnthoat"
+            android:layout_weight="1"/>
+
+        <Button
+            android:text="Nộp bài"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnnopbai"
+            android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>
