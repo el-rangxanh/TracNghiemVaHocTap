@@ -42,7 +42,8 @@ public class MainActivity extends AppCompatActivity
         fab_tumoi = (FloatingActionButton) findViewById(R.id.fab_newword);
         fab_dongtubqt = (FloatingActionButton) findViewById(R.id.fab_dongtu);
         fab_congthuc = (FloatingActionButton) findViewById(R.id.fab_congthuc);
-
+        
+            // bắt sự kiện click fab
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
